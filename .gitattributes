@@ -1,0 +1,10 @@
+# Enforce LF line endings for text sources; binary handling for images.
+*.m      text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.urdf   text eol=lf
+*.cff    text eol=lf
+*.png    binary
+*.jpg    binary
+*.gif    binary

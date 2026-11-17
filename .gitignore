@@ -1,0 +1,24 @@
+# GNU Octave
+octave-workspace
+octave-core
+*.asv
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local scratch / debug
+tmp_*.m
+*_debug.m
+
+# Build / output logs (figures are intentionally tracked)
+output/logs/*.log
+output/logs/
+
+# IDE / editor
+.vscode/
+.idea/
+*.ipynb_checkpoints

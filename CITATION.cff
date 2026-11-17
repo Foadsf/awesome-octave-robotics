@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "awesome-octave-robotics"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Sojoodi Farimani"
+    given-names: "Foad"
+    email: "f.s.farimani@gmail.com"
+    affiliation: "Dr. Foad Sojoodi Farimani"
+    orcid: ""
+identifiers:
+  - type: doi
+    value: ""
+  - type: url
+    value: "https://github.com/Foadsf/awesome-octave-robotics"
+repository-code: "https://github.com/Foadsf/awesome-octave-robotics"
+url: "https://github.com/Foadsf/awesome-octave-robotics"
+license: BSD-3-Clause
+license-url: "https://opensource.org/license/bsd-3-clause/"
+version: "1.0.0"
+date-released: 2026-11-17
+contact: f.s.farimani@gmail.com
+keywords:
+  - gnu-octave
+  - robotics
+  - slam
+  - motion-planning
+  - control-systems
+  - uav
+  - auv
+  - autonomous-driving
+  - open-source-robotics
+  - floss

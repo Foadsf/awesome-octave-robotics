@@ -12,7 +12,7 @@ across all 11 application areas + 3 common tool categories.
 - [x] Phase 0 — Grounding & Workspace Initialization (complete)
 - [x] Phase 1 — Core Kernel (`src/core`) + tests/test_core.m (29 checks PASS)
 - [x] Phase 2 — Batch A domains (01–04) + tests/test_batchA.m (20 checks PASS)
-- [x] Phase 3 — Batch B domains (05–08) + tests/test_batchB.m (19 checks PASS)
+- [x] Phase 3 — Batch B domains (05–08) + tests/test_batchB.m (21 checks PASS; includes feature_tracker detect/match)
 - [x] Phase 4 — Batch C domains (09–11) + Tools (12–14) + demos 09–14 + tests/test_batchC.m (20 checks PASS)
 - [x] Phase 5 — Unified runners, full verification, README, PLAN complete
 

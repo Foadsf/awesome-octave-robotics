@@ -35,6 +35,16 @@ ang_int = cumsum(gyro(:,1:2)) * dt;   % no accel correction
 check(sqrt(mean((ang(:,1)-true_roll).^2)) < sqrt(mean((ang_int(:,1)-true_roll).^2)), ...
       "filter beats uncorrected gyro integration on roll");
 
+% feature tracker: detect corners on a synthetic image with a bright square corner
+I = zeros(60); I(25:35, 25:35) = 1;
+c1 = feature_tracker(I, "detect", struct());
+check(rows(c1) > 0 && all(isfinite(c1(:))), "feature_tracker detects corners on synthetic image");
+% two images sharing one bright square feature -> at least one match
+I1 = zeros(60); I1(25:35, 25:35) = 1;
+I2 = zeros(60); I2(25:35, 25:35) = 1; I2(45:52, 45:52) = 0.5;
+[m, ~, ~] = feature_tracker(I1, I2, "match", struct());
+check(rows(m) >= 1, "feature_tracker matches shared feature between images");
+
 printf("=== 06 mapping / SLAM ===\n");
 % ICP recovers a known rigid transform applied to a synthetic point cloud
 rng(0);
